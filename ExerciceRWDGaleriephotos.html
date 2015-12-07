@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Psychedelic Party</title>
+      <link rel="stylesheet" href="ExerciceRWDGaleriephotos.css" media="screen" title="no title" charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Slabo+50px' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
+<h1>Psychedelic Party</h1>
+  </head>
+
+<body id="body">
+
+<script type="text/javascript">
+
+// Les contenus placés dans des objets
+var divs = [
+  {titresArticles:'monImage1',
+    description:'Come into your creepy dreams.',
+    url:'giphy.gif'
+  },
+    {titresArticles:'monImage2',
+    description:'blabla',
+    url:'giphy.gif'
+  },
+    {titresArticles:'monImage3',
+    description:'blabla',
+    url:'giphy.gif'
+  },
+  ];
+
+// boucle pour manipuler l'affichage dans le html
+  for(var i in divs){
+
+    var body = document.getElementById("body");
+
+//créa des élèments
+    var bandeau = document.createElement("div");
+
+    var images = document.createElement("img");
+    //creer un id javascript et l'associer a une position dans un tableau
+    images.id = "img1";
+    img1.id = divs[0].url;
+
+
+    // images.id = "img2";
+    // images.id = "img3";
+
+
+    var titresArticles = document.createElement("h2");
+    var paragraphes = document.createElement("p");
+
+
+//Attributs :
+//Le premier paramètre est le nom de l'attribut, et le deuxième, dans
+//le cas de setAttribute() uniquement, est la nouvelle valeur à donner à l'attribut.
+images.setAttribute('src', divs[i].url);
+
+bandeau.setAttribute("h1","ijol");
+// mettre un titre dans une div bandeau ? comme attribuer un id a cette div ?
+
+//placer les élèments
+    body.appendChild(bandeau);
+    body.appendChild(images);
+    body.appendChild(titresArticles);
+    body.appendChild(paragraphes);
+
+//contenu des élèments
+    titresArticles.textContent = divs[i].titresArticles;
+    paragraphes.textContent= divs[i].description;
+
+
+
+////////////// !!!EXPERIMENTAL
+// if l'ecran est inf a 600px cache le p
+// var resolution={
+// if(document<width(600px){
+//   paragraphes=0;
+// }
+// else {
+//   return paragraphes;
+// }
+// }
+
+  }
+</script>
+
+
+</body>
+</html>

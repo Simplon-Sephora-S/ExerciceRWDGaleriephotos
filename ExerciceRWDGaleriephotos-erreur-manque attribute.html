@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Psychedelic Party</title>
+      <link rel="stylesheet" href="ExerciceRWDGaleriephotos.css" media="screen" title="no title" charset="utf-8">
+      <link href='https://fonts.googleapis.com/css?family=Slabo+50px' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
+
+  </head>
+
+<body id="body">
+
+<script type="text/javascript">
+
+// Les contenus placés dans des objets
+var divs = [
+  {titresArticles:'monImage1',
+    description:'Come into your creepy dreams.',
+    url:'http://www.clicktorelease.com/code/gif/1.gif'
+  },
+    {titresArticles:'monImage2',
+    description:'blabla',
+    url:'http://www.clicktorelease.com/code/gif/1.gif'
+  },
+    {titresArticles:'monImage3',
+    description:'blabla',
+    url:'img1.png'
+  },
+  ];
+
+// boucle pour manipuler l'affichage dans le html
+  for(var i in divs){
+
+    var body = document.getElementById("body");
+
+//créa des élèments
+    var titrePage = document.createElement("h1");
+    var titresArticles = document.createElement("h2");
+    var paragraphes = document.createElement("p");
+    var images = document.createElement("img");
+
+//Attributs
+images = link.getAttribute('img');
+images.setAttribute('src', 'http://www.siteduzero.com');
+
+
+//placer les élèments
+    body.appendChild(titrePage);
+    body.appendChild(titresArticles);
+    body.appendChild(paragraphes);
+    body.appendChild(images);
+//contenu des élèments
+
+    titresArticles.textContent = divs[i].titresArticles;
+    paragraphes.textContent= divs[i].description;
+//affiche l'image via l'url
+//dans le html insere l'image, le titre et la description
+//prend l'url dans le tableau et designe la
+//comme source de l'image pour y acceder
+
+
+// divs[i].url = images.src;
+
+
+
+
+//Une image avec l'url
+//////////// ???inserer une image js dans une balise img
+
+
+
+// Comment mettre a jour la var divs qd il y a un nouvel article ?
+
+
+
+
+  }
+</script>
+<img src="" alt="" url=/>
+
+</body>
+</html>
